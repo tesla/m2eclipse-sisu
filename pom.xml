@@ -32,8 +32,8 @@
   </properties>  
       
   <modules>
-    <module>org.sonatype.m2e.sisuindex</module>
-    <module>org.sonatype.m2e.sisuindex.feature</module>
+    <module>org.sonatype.m2e.sisu</module>
+    <module>org.sonatype.m2e.sisu.feature</module>
   </modules>
 
 </project>
