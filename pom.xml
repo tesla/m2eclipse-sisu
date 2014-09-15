@@ -11,9 +11,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.tesla.tycho</groupId>
+    <groupId>io.takari.tycho</groupId>
     <artifactId>tycho-support</artifactId>
-    <version>0.0.12</version>
+    <version>0.14.0</version>
   </parent>
     
   <!--
@@ -28,12 +28,12 @@
 
   <properties>
     <repositoryPathId>m2eclipse-sisu</repositoryPathId>
-    <p2MetadataName>M2E Sisu Connector</p2MetadataName>
   </properties>  
       
   <modules>
     <module>org.sonatype.m2e.sisu</module>
     <module>org.sonatype.m2e.sisu.feature</module>
+    <module>org.sonatype.m2e.sisu.repository</module>
   </modules>
 
 </project>
