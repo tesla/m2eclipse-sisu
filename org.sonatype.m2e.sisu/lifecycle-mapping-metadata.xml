@@ -17,5 +17,25 @@
         </configurator>
       </action>
     </pluginExecution>
+    <pluginExecution>
+      <pluginExecutionFilter>
+        <groupId>org.eclipse.sisu</groupId>
+        <artifactId>sisu-maven-plugin</artifactId>
+        <!-- 
+          there appear to be a bug in VersionRange parser in maven 3.2.4
+          range=[0,) does not include version=0.0.0.M2 for whatever reason
+         -->
+        <versionRange>[,1),[1,)</versionRange>
+        <goals>
+          <goal>main-index</goal>
+          <goal>test-index</goal>
+        </goals>
+      </pluginExecutionFilter>
+      <action>
+        <configurator>
+          <id>org.sonatype.m2e.sisuindex.sisuindexConfigurator</id>
+        </configurator>
+      </action>
+    </pluginExecution>
   </pluginExecutions>
 </lifecycleMappingMetadata>
